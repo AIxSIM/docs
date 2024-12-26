@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www.matsim.org/files/dtd"
+           targetNamespace="http://www.matsim.org/files/dtd"
+           elementFormDefault="qualified">
+
+    <!-- Root element: population -->
+    <xs:element name="population">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="metadata">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="total_population" type="xs:integer" />
+                            <xs:element name="population_statistics">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="personal_category" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="role" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="id" type="xs:string" use="required" />
+                                                            <xs:attribute name="count" type="xs:integer" use="required" />
+                                                            <xs:attribute name="proportion" type="xs:decimal" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="id" type="xs:string" use="required" />
+                                                <xs:attribute name="total" type="xs:integer" use="required" />
+                                                <xs:attribute name="proportion" type="xs:decimal" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="personal_category" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="attributes">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="attribute" maxOccurs="unbounded">
+                                            <xs:complexType mixed="true"> <!-- 텍스트 값을 허용 -->
+                                                <xs:sequence>
+                                                    <xs:element name="focus" type="xs:string" minOccurs="0" />
+                                                    <xs:element name="key_elements" type="xs:string" minOccurs="0" />
+                                                    <xs:element name="tools" type="xs:string" minOccurs="0" />
+                                                    <xs:element name="default" type="xs:string" minOccurs="0" />
+                                                </xs:sequence>
+                                                <xs:attribute name="name" type="xs:string" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+
+
+
+    <!-- Root element -->
+    <xs:element name="roles">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="role" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="person" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name" type="xs:string"/>
+                                        <xs:element name="attributes">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="attribute" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:simpleContent>
+                                                                <xs:extension base="xs:string">
+                                                                    <xs:attribute name="name" type="xs:string" use="required"/>
+                                                                </xs:extension>
+                                                            </xs:simpleContent>
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+
+
+					<xs:element name="plan" minOccurs="0">
+					    <xs:complexType>
+						<xs:sequence>
+
+						  <xs:choice maxOccurs="unbounded">
+						    <xs:element name="activity">
+							<xs:complexType>
+							    <xs:sequence>
+								<xs:element name="destination_links" type="xs:string" />
+							    </xs:sequence>
+							    <xs:attribute name="destination" type="xs:string" use="required" />
+							</xs:complexType>
+						    </xs:element>
+						    <xs:element name="transport_mode" type="xs:string" />
+						  </xs:choice>
+
+						</xs:sequence>
+					    </xs:complexType>
+					</xs:element>
+
+
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+
+
+
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required" />
+                        <xs:attribute name="final_destination" type="xs:string" use="optional" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

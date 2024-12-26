@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           elementFormDefault="qualified">
+
+    <!-- Root element -->
+    <xs:element name="routes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="vehicle" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="attribute" minOccurs="0" maxOccurs="unbounded">
+                                <xs:complexType>
+				    <xs:simpleContent>
+					<xs:extension base="xs:string">
+					    <xs:attribute name="name" type="xs:string" use="required"/>
+					</xs:extension>
+				    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="route" minOccurs="1" maxOccurs="1">
+                                <xs:complexType>
+                                    <xs:attribute name="edges" type="xs:string" use="required"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required"/>
+                        <xs:attribute name="depart" type="xs:float" use="required"/>
+                        <xs:attribute name="departLane" type="xs:string" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="xsi" type="xs:string" use="optional"/>
+            <xs:attribute name="noNamespaceSchemaLocation" type="xs:string" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
+
