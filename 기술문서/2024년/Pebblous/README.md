@@ -7,6 +7,6 @@
 2 | [IITP-1차년도-행동모델러요구기술분석서v0.50.pdf](./IITP-1차년도-행동모델러요구기술분석서v0.50.pdf) | 행동모델러 요구기술분석 자료
 3 | [IITP-1차년도-행동모델러인터페이스정의서v0.05.pdf](./IITP-1차년도-행동모델러인터페이스정의서v0.05.pdf) | 행동모델러 인터페이스분석 자료
 4 | [2024-annual-report/readme.md](./2024-annual-report/) | 2024년 행동모델러 연차보고
-5 | [2024-technical-documentation-system-design/readme.md](./2024-technical-documentation-system-design/readme.md) | 행동모델러 시스템 디자인 자료
-6 | [AgentXML/readme.md](./AgentXML/readme.md)| 행동모델러 인터페이스설계 자료
+5 | [2024-technical-documentation-system-design/readme.md](./2024-technical-documentation-system-design/) | 행동모델러 시스템 디자인 자료
+6 | [AgentXML/readme.md](./AgentXML/)| 행동모델러 인터페이스설계 자료
 <
