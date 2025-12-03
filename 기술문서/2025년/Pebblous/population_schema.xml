@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <text>
+        <total_population> </total_population>
+    </text>
+    <text>
+        <total_population> </total_population>
+    </text>
+
+    <personal>
+        <personal_job></personal_job>
+        <personal_min></personal_min>
+        <personal_max></personal_max>
+    </personal>
+     <personal>
+        <personal_job></personal_job>
+        <personal_min></personal_min>
+        <personal_max></personal_max>
+    </personal>
+
+    <behavior>
+        <behavior_name></behavior_name>
+        <behavior_level></behavior_level>
+        <behavior_min></behavior_min>
+        <behavior_max></behavior_max>
+    </behavior>
+    <behavior>
+        <behavior_name></behavior_name>
+        <behavior_level></behavior_level>
+        <behavior_min></behavior_min>
+        <behavior_max></behavior_max>
+    </behavior>
+    
+    <injury>
+        <injury_value></injury_value>
+        <injury_min></injury_min>
+        <injury_max></injury_max>
+    </injury>
+    <injury>
+        <injury_value></injury_value>
+        <injury_min></injury_min>
+        <injury_max></injury_max>
+    </injury>
+</root>

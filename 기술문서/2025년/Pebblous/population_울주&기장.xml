@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<text>
+		<total_population>393345</total_population>
+	</text>
+	<personal>
+		<personal_job>medical workers</personal_job>
+		<personal_min>0.0082</personal_min>
+		<personal_max>0.0122</personal_max>
+	</personal>
+	<personal>
+		<personal_job>fire officer</personal_job>
+		<personal_min>0.0014</personal_min>
+		<personal_max>0.0017</personal_max>
+	</personal>
+	<personal>
+		<personal_job>police officer</personal_job>
+		<personal_min>0.0018</personal_min>
+		<personal_max>0.0021</personal_max>
+	</personal>
+	<personal>
+		<personal_job>bus driver</personal_job>
+		<personal_min>0.002</personal_min>
+		<personal_max>0.0028</personal_max>
+	</personal>
+	<personal>
+		<personal_job>nuclear power plant worker</personal_job>
+		<personal_min>0.0061</personal_min>
+		<personal_max>0.0479</personal_max>
+	</personal>
+	<personal>
+		<personal_job>elementary school student</personal_job>
+		<personal_min>0.0458</personal_min>
+		<personal_max>0.0647</personal_max>
+	</personal>
+	<personal>
+		<personal_job>middle school student</personal_job>
+		<personal_min>0.0275</personal_min>
+		<personal_max>0.0355</personal_max>
+	</personal>
+	<personal>
+		<personal_job>high school student</personal_job>
+		<personal_min>0.0214</personal_min>
+		<personal_max>0.0294</personal_max>
+	</personal>
+	<personal>
+		<personal_job>citizen</personal_job>
+		<personal_min>0.851</personal_min>
+		<personal_max>0.8775</personal_max>
+	</personal>
+	<behavior>
+		<behavior_name>risk aversion</behavior_name>
+		<behavior_level>low</behavior_level>
+		<behavior_min>0.3</behavior_min>
+		<behavior_max>0.4</behavior_max>
+	</behavior>
+	<behavior>
+		<behavior_name>self-evacuation</behavior_name>
+		<behavior_level>low</behavior_level>
+		<behavior_min>0.41</behavior_min>
+		<behavior_max>0.47</behavior_max>
+	</behavior>
+	<behavior>
+		<behavior_name>compliance with information</behavior_name>
+		<behavior_level>low</behavior_level>
+		<behavior_min>0.14</behavior_min>
+		<behavior_max>0.21</behavior_max>
+	</behavior>
+	<behavior>
+		<behavior_name>altruism</behavior_name>
+		<behavior_level>low</behavior_level>
+		<behavior_min>0.1</behavior_min>
+		<behavior_max>0.9</behavior_max>
+	</behavior>
+	<behavior>
+		<behavior_name>morality</behavior_name>
+		<behavior_level>low</behavior_level>
+		<behavior_min>0.1</behavior_min>
+		<behavior_max>0.9</behavior_max>
+	</behavior>
+	<injury>
+		<injury_value>injured</injury_value>
+		<injury_min>0.05</injury_min>
+		<injury_max>0.1</injury_max>
+	</injury>
+</root>
